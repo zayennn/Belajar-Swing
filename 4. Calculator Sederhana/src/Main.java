@@ -56,7 +56,7 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
 
                 try {
-                    if (angka1.getText().isEmpty() || angka2.getText().isEmpty()) {
+                    if (angka1.getText().isEmpty() || angka2.getText().isEmpty() || operator.getText().isEmpty()) {
                         JOptionPane.showMessageDialog(
                                 null,
                                 "Input tidak boleh kosong!",
