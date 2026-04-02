@@ -50,8 +50,7 @@ public class Main {
                 int input2 = Integer.parseInt(angka2.getText());
 
                 try {
-                    Aritmatika hasil = new Aritmatika(input1, input2);
-                    JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Penjumlahan()));
+
                 } catch (Exception ex) {
                     throw new RuntimeException(ex);
                 }
