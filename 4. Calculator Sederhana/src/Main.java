@@ -45,11 +45,12 @@ public class Main {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                char op = operator.getText().charAt(0);
-                int input1 = Integer.parseInt(angka1.getText());
-                int input2 = Integer.parseInt(angka2.getText());
 
                 try {
+                    char op = operator.getText().charAt(0);
+                    int input1 = Integer.parseInt(angka1.getText());
+                    int input2 = Integer.parseInt(angka2.getText());
+
                     if (op == '+') {
                         Aritmatika hasil = new Aritmatika(input1, input2);
                         JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Penjumlahan()));
