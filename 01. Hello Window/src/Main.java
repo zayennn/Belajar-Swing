@@ -20,3 +20,6 @@ public class Main {
 
 // frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 // tombol close
+
+// frame.setVisible(true);
+// tampilkan window , kalo gaada gabakalan muncul
