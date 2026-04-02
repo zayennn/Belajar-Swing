@@ -84,7 +84,7 @@ public class Main {
                     } else {
                         JOptionPane.showMessageDialog(
                                 null,
-                                "Operator hanya boleh dari salah sati +, -, *, /",
+                                "Operator hanya boleh dari salah satu +, -, *, /",
                                 "Error",
                                 JOptionPane.ERROR_MESSAGE
                         );
