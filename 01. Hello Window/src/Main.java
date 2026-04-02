@@ -9,3 +9,14 @@ public class Main {
         frame.setVisible(true);
     }
 }
+
+// import javax.swing.JFrame;
+// Ngambil class JFrame dari library Swing
+
+// frame.setSize(400, 300);
+// ukuran window :
+// 400 = lebar
+// 300 = tinggi
+
+// frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+// tombol close
