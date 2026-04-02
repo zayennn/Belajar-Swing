@@ -35,7 +35,7 @@ public class Main {
         frame.add(label3);
         frame.add(operator);
 
-        frame.setSize(400, 400);
+        frame.setSize(400, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
