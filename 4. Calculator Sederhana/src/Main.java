@@ -60,34 +60,43 @@ public class Main {
                     int input1 = Integer.parseInt(angka1.getText());
                     int input2 = Integer.parseInt(angka2.getText());
 
-                    if (op == '+') {
-                        Aritmatika hasil = new Aritmatika(input1, input2);
-                        JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Penjumlahan()));
-                    } else if (op == '-') {
-                        Aritmatika hasil = new Aritmatika(input1, input2);
-                        JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Pengurangan()));
-                    } else if (op == '*') {
-                        Aritmatika hasil = new Aritmatika(input1, input2);
-                        JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Perkalian()));
-                    } else if (op == '/') {
-                        if (input2 == '0') {
-                            JOptionPane.showMessageDialog(
-                                    null,
-                                    "Tidak bisa dibagi 0!",
-                                    "Error",
-                                    JOptionPane.ERROR_MESSAGE
-                            );
-                        } else {
-                            Aritmatika hasil = new Aritmatika(input1, input2);
-                            JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Pembagian()));
-                        }
-                    } else {
+                    if (angka1.getText().isEmpty() || angka2.getText().isEmpty()){
                         JOptionPane.showMessageDialog(
                                 null,
-                                "Operator hanya boleh dari salah satu +, -, *, /",
+                                "Input tidak boleh kosong!",
                                 "Error",
                                 JOptionPane.ERROR_MESSAGE
                         );
+                    } else {
+                        if (op == '+') {
+                            Aritmatika hasil = new Aritmatika(input1, input2);
+                            JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Penjumlahan()));
+                        } else if (op == '-') {
+                            Aritmatika hasil = new Aritmatika(input1, input2);
+                            JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Pengurangan()));
+                        } else if (op == '*') {
+                            Aritmatika hasil = new Aritmatika(input1, input2);
+                            JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Perkalian()));
+                        } else if (op == '/') {
+                            if (input2 == '0') {
+                                JOptionPane.showMessageDialog(
+                                        null,
+                                        "Tidak bisa dibagi 0!",
+                                        "Error",
+                                        JOptionPane.ERROR_MESSAGE
+                                );
+                            } else {
+                                Aritmatika hasil = new Aritmatika(input1, input2);
+                                JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Pembagian()));
+                            }
+                        } else {
+                            JOptionPane.showMessageDialog(
+                                    null,
+                                    "Operator hanya boleh dari salah satu +, -, *, /",
+                                    "Error",
+                                    JOptionPane.ERROR_MESSAGE
+                            );
+                        }
                     }
                 } catch (Exception ex) {
                     JOptionPane.showMessageDialog(
