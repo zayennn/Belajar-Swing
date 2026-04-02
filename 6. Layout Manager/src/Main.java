@@ -14,7 +14,7 @@ public class Main {
         JLabel label2 = new JLabel("Masukan angka kedua : ");
         JTextField angka2 = new JTextField(10);
 
-        JButton button = new JButton("Hitung");
+        JButton button = new JButton("Tambah");
 
         button.addActionListener(new ActionListener() {
             @Override
