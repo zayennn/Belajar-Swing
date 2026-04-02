@@ -11,7 +11,7 @@ public class Main {
         JLabel label1 = new JLabel("Masukan angka pertama : ");
         JTextField angka1 = new JTextField(10);
 
-        JLabel label2 = new JLabel("Masukan angka pertama : ");
+        JLabel label2 = new JLabel("Masukan angka kedua : ");
         JTextField angka2 = new JTextField(10);
 
         JButton button = new JButton("Hitung");
