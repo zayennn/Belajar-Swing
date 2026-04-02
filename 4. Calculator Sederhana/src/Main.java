@@ -3,6 +3,20 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Main {
+    static class Aritmatika {
+        int angka1;
+        int angka2;
+
+        Aritmatika(int angka1, int angka2) {
+            this.angka1 = angka1;
+            this.angka2 = angka2;
+        }
+
+        int Penjumlahan() {
+            return angka1 + angka2;
+        }
+    }
+
     public static void main(String[] args) {
         JFrame frame = new JFrame("kalkulator sederhana");
         frame.setLayout(null);
@@ -27,6 +41,29 @@ public class Main {
 
         JButton button = new JButton("hitung");
         button.setBounds(20, 200, 150, 30);
+
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                char op = operator.getText().charAt(0);
+                int input1 = Integer.parseInt(angka1.getText());
+                int input2 = Integer.parseInt(angka2.getText());
+
+                if (op == '+') {
+                    Aritmatika hasil = new Aritmatika(input1, input2);
+                    JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Penjumlahan()));
+                } else if (op == '-') {
+                    Aritmatika hasil = new Aritmatika(input1, input2);
+                    JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Penjumlahan()));
+                } else if (op == '*') {
+                    Aritmatika hasil = new Aritmatika(input1, input2);
+                    JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Penjumlahan()));
+                } else if (op == '/') {
+                    Aritmatika hasil = new Aritmatika(input1, input2);
+                    JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Penjumlahan()));
+                }
+            }
+        });
 
         frame.add(label1);
         frame.add(angka1);
