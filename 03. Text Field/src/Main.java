@@ -19,7 +19,7 @@ public class Main {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String name = textField.getText();
+                String name = textField.getText().trim();
                 if (name.equalsIgnoreCase("")) {
                     JOptionPane.showMessageDialog(null, "nama tidak boleh ");
                 } else {
