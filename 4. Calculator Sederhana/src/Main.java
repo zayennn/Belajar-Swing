@@ -10,7 +10,7 @@ public class Main {
         JFrame frame = new JFrame("kalkulator sederhana");
         frame.setLayout(null);
 
-        JLabel label1 = new JLabel();
+        JLabel label1 = new JLabel("Masukan angka pertama : ");
         label1.setBounds(20, 20, 150, 50);
 
         frame.add(label1);
