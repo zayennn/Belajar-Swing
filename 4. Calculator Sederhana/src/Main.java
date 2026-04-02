@@ -15,6 +15,15 @@ public class Main {
         int Penjumlahan() {
             return angka1 + angka2;
         }
+        int Pengurangan() {
+            return angka1 - angka2;
+        }
+        int Perkalian() {
+            return angka1 * angka2;
+        }
+        int Pembagian() {
+            return angka1 / angka2;
+        }
     }
 
     public static void main(String[] args) {
@@ -54,6 +63,31 @@ public class Main {
                     if (op == '+') {
                         Aritmatika hasil = new Aritmatika(input1, input2);
                         JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Penjumlahan()));
+                    } else if (op == '-') {
+                        Aritmatika hasil = new Aritmatika(input1, input2);
+                        JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Pengurangan()));
+                    } else if (op == '*') {
+                        Aritmatika hasil = new Aritmatika(input1, input2);
+                        JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Perkalian()));
+                    } else if (op == '/') {
+                        if (input2 == '0') {
+                            JOptionPane.showMessageDialog(
+                                    null,
+                                    "Tidak bisa dibagi 0!",
+                                    "Error",
+                                    JOptionPane.ERROR_MESSAGE
+                            );
+                        } else {
+                            Aritmatika hasil = new Aritmatika(input1, input2);
+                            JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Pembagian()));
+                        }
+                    } else {
+                        JOptionPane.showMessageDialog(
+                                null,
+                                "Operator hanya boleh dari salah sati +, -, *, /",
+                                "Error",
+                                JOptionPane.ERROR_MESSAGE
+                        );
                     }
                 } catch (Exception ex) {
                     JOptionPane.showMessageDialog(
