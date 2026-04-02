@@ -9,6 +9,20 @@ public class Main {
         JFrame frame = new JFrame("bikin button");
         JButton button = new JButton("click aku");
 
-        button
+        button.setBounds(130, 100, 140, 50);
+
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null, "button di click");
+            }
+        });
+
+        frame.add(button);
+
+        frame.setSize(300, 400);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(null);
     }
 }
