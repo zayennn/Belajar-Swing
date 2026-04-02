@@ -13,6 +13,10 @@ public class Main {
         JLabel label1 = new JLabel();
         label1.setBounds(20, 20, 150, 50);
 
+        frame.add(label1);
 
+        frame.setSize(400, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
 }
