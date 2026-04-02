@@ -63,6 +63,7 @@ public class Main {
                                 "Error",
                                 JOptionPane.ERROR_MESSAGE
                         );
+                        return;
                     }
 
                     char op = operator.getText().charAt(0);
