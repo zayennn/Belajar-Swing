@@ -14,10 +14,14 @@ public class Main {
         label.setBounds(20, 20, 120, 30);
 
         JTextField textField = new JTextField();
-        textField.setBounds(20, 40, 140, 30);
+        textField.setBounds(20, 60, 140, 30);
 
         JButton button = new JButton("submit");
-        button.setBounds(20, 60, 150, 40);
+        button.setBounds(20, 100, 140, 30);
+
+        frame.add(label);
+        frame.add(textField);
+        frame.add(button);
 
         frame.setSize(400, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
