@@ -49,25 +49,10 @@ public class Main {
                 int input1 = Integer.parseInt(angka1.getText());
                 int input2 = Integer.parseInt(angka2.getText());
 
-                if (op == '+') {
-                    Aritmatika hasil = new Aritmatika(input1, input2);
-                    JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Penjumlahan()));
-                } else if (op == '-') {
-                    Aritmatika hasil = new Aritmatika(input1, input2);
-                    JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Penjumlahan()));
-                } else if (op == '*') {
-                    Aritmatika hasil = new Aritmatika(input1, input2);
-                    JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Penjumlahan()));
-                } else if (op == '/') {
-                    Aritmatika hasil = new Aritmatika(input1, input2);
-                    JOptionPane.showMessageDialog(null, String.format("hasil dari %d %c %d = %d", input1, op, input2, hasil.Penjumlahan()));
-                } else {
-                    JOptionPane.showMessageDialog(
-                            null,
-                            "cuma boleh menggunakan salah satu dari +, -, *, /",
-                            "Error",
-                            JOptionPane.ERROR_MESSAGE
-                    );
+                try {
+
+                } catch (Exception ex) {
+                    throw new RuntimeException(ex);
                 }
             }
         });
