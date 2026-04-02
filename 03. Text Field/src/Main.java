@@ -1,7 +1,4 @@
-import javax.swing.JFrame;
-import javax.swing.JButton;
-import javax.swing.JTextField;
-import javax.swing.JLabel;
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -18,6 +15,18 @@ public class Main {
 
         JButton button = new JButton("submit");
         button.setBounds(20, 100, 140, 30);
+
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String name = textField.getText();
+                if (name.equalsIgnoreCase("")) {
+                    JOptionPane.showMessageDialog(null, "nama tidak boleh ");
+                } else {
+                    JOptionPane.showMessageDialog(null, String.format("halo %s!", name));
+                }
+            }
+        });
 
         frame.add(label);
         frame.add(textField);
