@@ -26,7 +26,7 @@ public class Main {
         label3.setBounds(20, 140, 150, 50);
 
         JTextField operator = new JTextField();
-        operator.setBounds(20, 160, 150, 30);
+        operator.setBounds(20, 180, 150, 30);
 
         frame.add(label1);
         frame.add(angka1);
@@ -35,7 +35,7 @@ public class Main {
         frame.add(label3);
         frame.add(operator);
 
-        frame.setSize(400, 300);
+        frame.setSize(400, 400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
