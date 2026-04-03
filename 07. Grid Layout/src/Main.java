@@ -25,6 +25,12 @@ public class Main {
 
         for (String text : tombol) {
             JButton button = new JButton(text);
+            panel.add(button);
         }
+
+        frame.add(panel, BorderLayout.CENTER);
+        frame.setSize(500, 500);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
 }
