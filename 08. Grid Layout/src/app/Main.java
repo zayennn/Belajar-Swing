@@ -18,6 +18,10 @@ public class Main {
             System.out.println("============= Input mahasiswa ke - " + i);
             System.out.print("Masukan nama mahasiswa : ");
             String nama = input.nextLine();
+
+            System.out.print("Masukan umur mahasiswa : ");
+            int umur = input.nextInt();
+            input.nextLine();
         }
     }
 }
