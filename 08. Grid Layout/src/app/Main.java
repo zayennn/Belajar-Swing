@@ -13,5 +13,11 @@ public class Main {
         System.out.print("Masukan jumlah mahasiswa yang ingin anda input : ");
         int jumlah = input.nextInt();
         input.nextLine();
+
+        for (int i = 0; i < jumlah; i++) {
+            System.out.println("============= Input mahasiswa ke - " + i);
+            System.out.print("Masukan nama mahasiswa : ");
+            String nama = input.nextLine();
+        }
     }
 }
