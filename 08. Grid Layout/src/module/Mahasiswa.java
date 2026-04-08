@@ -1,9 +1,9 @@
 package module;
 
 public class Mahasiswa {
-    private String nama;
-    private int umur;
-    private String jurusan;
+    public String nama;
+    public int umur;
+    public String jurusan;
 
     public Mahasiswa(String nama, int umur, String jurusan) {
         this.nama = nama;
