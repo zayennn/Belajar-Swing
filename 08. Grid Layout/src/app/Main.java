@@ -1,6 +1,7 @@
 package app;
 
 import module.Mahasiswa;
+import service.MahasiswaService;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -28,7 +29,11 @@ public class Main {
 
             mahasiswas.add(new Mahasiswa(nama, umur, jurusan));
 
-
+            if (i > jumlah) {
+                System.out.println(i + " Mahasiswa berhasil di buat!");
+            }
         }
+
+        mahasiswas.forEach();
     }
 }

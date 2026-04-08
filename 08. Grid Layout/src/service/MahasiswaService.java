@@ -3,11 +3,11 @@ package service;
 import module.Mahasiswa;
 
 public class MahasiswaService {
-    public void getInfoMahasiswa() {
+    public void getInfoMahasiswa(Mahasiswa mhs) {
         System.out.printf("""
                 Nama    : %s
                 Umur    : %d
                 Jurusan : %s
-                """, Mahasiswa);
+                """, mhs.nama, mhs.umur, mhs.jurusan);
     }
 }
