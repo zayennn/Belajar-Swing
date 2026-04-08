@@ -35,7 +35,7 @@ public class Main {
         display.setSize(150, 100);
 
         JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(4, 4, 4, 4));
+        panel.setLayout(new GridLayout(4, 4, 5, 5));
 
         String[] tombol = {
                 "7", "8", "9", "/",
