@@ -25,6 +25,10 @@ public class Main {
 
             System.out.print("Masukan jurusan mahasiswa : ");
             String jurusan = input.nextLine();
+
+            mahasiswas.add(new Mahasiswa(nama, umur, jurusan));
+
+
         }
     }
 }
