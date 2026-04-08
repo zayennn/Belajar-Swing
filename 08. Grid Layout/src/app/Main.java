@@ -12,6 +12,6 @@ public class Main {
 
         System.out.print("Masukan jumlah mahasiswa yang ingin anda input : ");
         int jumlah = input.nextInt();
-
+        input.nextLine();
     }
 }
