@@ -22,6 +22,9 @@ public class Main {
             System.out.print("Masukan umur mahasiswa : ");
             int umur = input.nextInt();
             input.nextLine();
+
+            System.out.print("Masukan jurusan mahasiswa : ");
+            String jurusan = input.nextLine();
         }
     }
 }
